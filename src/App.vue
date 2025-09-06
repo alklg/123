@@ -1,13 +1,16 @@
 <template>
     <div class = "app">
         <h1> hello </h1>
+        <Person />
     </div>
 
 </template>
 
 <script lang="ts">
+    import Person from './components/Person.vue'
     export default{
-        name: 'App'
+        name: 'App',
+        components: {Person}  // type string interface, 用于注册组件.
     }
 </script>
 
